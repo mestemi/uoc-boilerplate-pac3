@@ -1,3 +1,10 @@
+/*
+ * Import Tailwind base
+ */
+
+@tailwind base;
+@tailwind components;
+
 /**
  * Use this file to import partials.
  * Do not include SCSS code in this file.
@@ -7,7 +14,7 @@
  * Import variables
  */
 
-@import "variables";
+@import 'fonts';
 
 /**
  * Import npm dependencies
@@ -24,7 +31,13 @@
  */
 
 @import "layouts/home";
+@import "layouts/contact";
 
 /**
  * Do NOT include anything else in this file!
  */
+
+/*
+ * Import Tailwind utilities
+ */
+@tailwind utilities;

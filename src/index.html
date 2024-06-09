@@ -6,21 +6,90 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
     <title>UOC Boilerplate</title>
+    <link href="../node_modules/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet">
   </head>
   <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
+    <include src="./views/header.html"></include>
+
+    <main class="main main--chefs">
+      <div class="container px-3 mx-auto home-chefs">
+        <h1 class="main-title">
+            Els nostres xefs del jurat de CuinUOC
+        </h1>
+        <p>
+            El jurat de CuinUOC està conformat per un grup d'experts en cuina amb una llarga trajectòria professional. Aquests són els xefs que tastaran els plats dels participants i decidiran quins són els millors.
+        </p>
+        <div class="chefs flex flex-wrap justify-around">
+            <div class="chef">
+                <div class="chef__header">
+                    <img class="chef__img" src="./assets/images/chefs/joanroca.jpg" alt="Joan Roca">
+                </div>
+                <div class="chef__body">
+                    <h2 class="chef__name">Joan Roca</h2>
+                    <p class="chef__description">
+                        Joan Roca i Fontané és un cuiner català, nascut a Girona el 11 de febrer de 1964. És el xef del restaurant El Celler de Can Roca, situat a Girona, juntament amb els seus germans Josep i Jordi.
+                    </p>    
+                </div>
+            </div>
+            <div class="chef">
+                <div class="chef__header">
+                    <img class="chef__img" src="./assets/images/chefs/carmeruscalleda.jpg" alt="Carme Ruscalleda">
+                </div>
+                <div class="chef__body">
+                    <h2 class="chef__name">Carme Ruscalleda</h2>
+                    <p class="chef__description">
+                        Carme Ruscalleda i Serra és una cuinera catalana, nascuda a Sant Pol de Mar el 13 de febrer de 1952. És la cuinera amb més estrelles Michelin del món, amb un total de set.
+                    </p>
+                </div>
+            </div>
+            <div class="chef">
+                <div class="chef__header">
+                    <img class="chef__img" src="./assets/images/chefs/ferranadria.jpg" alt="Ferran Adrià">
+                </div>
+                <div class="chef__body">
+                    <h2 class="chef__name">Ferran Adrià</h2>
+                    <p class="chef__description">
+                        Ferran Adrià i Acosta és un cuiner català, nascut a L'Hospitalet de Llobregat el 14 de maig de 1962. Va ser el xef del restaurant elBulli, situat a Roses, fins a la seva clausura el 2011.
+                    </p>
+                </div>
+            </div>
+            <div class="chef">
+                <div class="chef__header">
+                    <img class="chef__img" src="./assets/images/chefs/elenaarzak.jpg" alt="Elena Arzak">
+                </div>
+                <div class="chef__body">
+                    <h2 class="chef__name">Elena Arzak</h2>
+                    <p class="chef__description">
+                        Elena Arzak Espina és una cuinera espanyola, nascuda a Saint-Sébastien el 4 de juliol de 1969. És la xefa del restaurant Arzak, situat a Saint-Sébastien, juntament amb el seu pare Juan Mari Arzak.
+                    </p>
+                </div>
+            </div>
+            <div class="chef">
+                <div class="chef__header">
+                    <img class="chef__img" src="./assets/images/chefs/albertadria.jpg" alt="Albert Adrià">
+                </div>
+                <div class="chef__body">
+                    <h2 class="chef__name">Albert Adrià</h2>
+                    <p class="chef__description">
+                        Albert Adrià i Acosta és un cuiner català, nascut a L'Hospitalet de Llobregat el 30 d'octubre de 1969. És el propietari dels restaurants Tickets, Pakta, Hoja Santa, Niño Viejo i Enigma, tots ells situats a Barcelona.
+                    </p>
+                </div>
+            </div>
+            <div class="chef">
+                <div class="chef__header">
+                    <img class="chef__img" src="./assets/images/chefs/nandujubany.jpg" alt="Nandu Jubany">
+                </div>
+                <div class="chef__body">
+                    <h2 class="chef__name">Nandu Jubany</h2>
+                    <p class="chef__description">
+                        Nandu Jubany i Rovira és un cuiner català, nascut a Olost el 15 de gener de 1971. És el xef del restaurant Can Jubany, situat a Calldetenes, i del restaurant Petit Comitè, situat a Barcelona.
+                    </p>
+                </div>
+            </div>
+        </div>
+      </div>
+    </main>
+
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>
